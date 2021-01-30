@@ -1,0 +1,411 @@
+.bg_img {
+    // img {
+    //     object-position: center;
+    //     object-fit: cover;
+    // }
+    background-image: url('./assets/images/bg-img.png');
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    p {
+        position: absolute;
+        left: 22%;
+        top: 35%;
+        font-size: 2rem;
+        color: #fff;
+        border: solid #fff;
+        cursor: pointer;
+    }
+}
+.fadeout {
+    animation: fadeout 1s ease-in forwards;
+}
+
+
+.presentation {
+    text-align: center;
+    img {
+        @include max-tablette {
+            width: 100%;
+        }
+    }
+    p {
+        font-size: 1.3rem;
+    }
+}
+h1 {
+    font-size: 1.7rem;
+    text-decoration: underline;
+    color: $form-color;
+    margin: 20px 0;
+}
+.presentation_initial {
+    font-size: 1.4rem;
+    li {
+        margin-bottom: 10px;
+    }
+    @include desktop-s {
+        font-size: 1.6rem;
+    }
+    .presentation_initial--bolder {
+        font-weight: bolder;
+    }
+}
+.presentation_titre {
+    display: flex;
+    margin-bottom: 5px;
+    position: relative;
+    h2 {
+        align-self: center;
+        font-size: 2rem;
+    }
+    .presentation_titre--fsize {
+        align-self: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.forme {
+    position: relative;
+    height: 70px;
+    width: 80px;
+    background-color: $form-color-dark;
+}
+.forme::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    border-left : 38px solid transparent;
+    border-bottom: 70px solid #ffff;
+}
+.presentation_intro, .presentation_seller, .presentation_buyer {
+    background-color: #D2D2D2;
+    position: relative;
+    font-size: 1.3rem;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-right : 50px solid transparent;
+        border-top   : 90px solid #fff;
+    }
+    .triangle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-right : 40px solid transparent;
+        border-top   : 75px solid $form-color;
+    }
+    ul {
+        padding: 15px 50px 30px 70px;
+        text-align: justify;
+        li {
+            margin-bottom: 10px;
+        }
+        @include tablette {
+            padding: 25px 100px 50px 100px;
+        }
+        @include desktop-s {
+            font-size: 1.5rem;
+        }
+    }
+}
+.presentation_titre--fsize {
+    font-size: 1.5rem;
+}
+
+
+.service_pack {
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 15px 0;
+    }
+}
+.right_allpacks-container {
+    text-align: center;
+    background-color: #D2D2D2;
+    padding: 10px 0;
+    .right_pack-container {
+        margin: 20px 40px;
+    }
+    .pack-container_title {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    .pack-container_details {
+        background-color: #C7CACB;
+        padding: 10px;
+        li {
+            list-style: none;
+            margin: 5px 0;
+        }
+        .pack_details--underline {
+            text-decoration: underline;
+        }
+        .pack_details--bold {
+            font-weight: bolder;
+            margin-top: 10px;
+        }
+    }
+}
+
+//service carte
+.service_carte {
+    text-align: center;
+    .service_img-container {
+        @include max-tablette {
+            display: none;
+        }
+    }
+}
+.service_header {
+    h3 {
+        font-size: 2rem;
+    }
+    img {
+        @include max-tablette {
+            display: none;
+        }
+    }
+}
+.service_byone {
+    margin: 10px 0;
+    .byone {
+        margin: 5px 0;
+    }
+}
+
+// .service_pack {
+//     @include max-tablette {
+//         width: 100%;
+//     }
+//     position: relative;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     height: 700px;
+//     width: 900px;
+//     margin-top: 40px;
+//     @include desktop-m {
+//         width: 1100px;
+//     }
+//     @include desktop-l {
+//         width: 1300px;
+//     }
+// }
+// .service_pack-title {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 15px;
+//     @include max-tablette {
+//         display: inherit;
+//     }
+//     .title_left {
+//         position: relative;
+//         width: 260px;
+//         height: 100px;
+//         margin-right: 105px;
+//         @include desktop-m {
+//             width: 250px;
+//         }
+//         @include desktop-l {
+//             width: 350px;
+//         }
+//         h2 {
+//             position: absolute;
+//             top: 45%;
+//             left: 20%;
+//             font-size: 2rem;
+//             @include max-tablette {
+//                 position: inherit;
+//             }
+//         }
+//     }
+//     .title_right {
+//         position: relative;
+//         background-color: $form-color-dark;
+//         width: 640px;
+//         height: 100px;
+//         margin-left: 105px;
+//         @include max-tablette {
+//             display: none;
+//         }
+//         @include desktop-m {
+//             width: 650px;
+//         }
+//         @include desktop-l {
+//             width: 750px;
+//         }
+//         &::before {
+//             content: "";
+//             position: absolute;
+//             left: -39.7px;
+//             border-left: 40px solid transparent;
+//             border-bottom: 100px solid $form-color-dark;
+//             @include desktop-m {
+//                 left: -39.2px;
+//             }
+//         }
+//     }
+// }
+// .service_pack-container {
+//     display: flex;
+//     justify-content: center;
+//     .container_left {
+//         position: relative;
+//         background-color: $form-color;
+//         width: 200px;
+//         height: 500px;
+//         margin-right: 105px;
+//         @include max-tablette {
+//             display: none;
+//         }
+//         @include desktop-l {
+//             width: 300px;
+//         }
+//         &::after {
+//             content: "";
+//             position: absolute;
+//             right: -199.3px;
+//             border-right: 200px solid transparent;
+//             border-top: 500px solid #2E75B6;
+//         }
+//     }
+//     .container_right {
+//         position: relative;
+//         background-color: #D2D2D2;
+//         width: 700px;
+//         height: 500px;
+//         margin-left: 105px;
+//         @include max-tablette {
+//             margin-left: 0;
+//         }
+//         @include desktop-l {
+//             width: 800px;
+//         }
+//         &::before {
+//             content: "";
+//             position: absolute;
+//             left: -199.3px;
+//             border-left: 200px solid transparent;
+//             border-bottom: 500px solid #D2D2D2;
+//             @include max-tablette {
+//                 display: none;
+//             }
+//             @include desktop-l {
+//                 left: -199px;
+//             }
+//         }
+//     }
+// }
+// .right_allpacks-container {
+//     position: relative;
+//     display: flex;
+//     margin-right: 5px;
+//     @include max-tablette {
+//         display: initial;
+//     }
+//     &::after {
+//         content: "*Hors frais diagnostics obligatoires";
+//         position: absolute;
+//         bottom: -25px;
+//         right: 10px;
+//         padding: 5px;
+//         background-color: $form-color;
+//         border: 2px solid #fff;
+//     }
+//     .pack-container_title {
+//         text-align: center;
+//         margin-bottom: 10px;
+//         h4, p {
+//             font-size: 1.4rem;
+//         }
+//     }
+//     .pack-container_details {
+//         background-color: #C7CACB;
+//         padding: 0 5px 20px 5px;
+//         p {
+//             text-align: center;
+//             text-decoration: underline;
+//         }
+//         ul {
+//             list-style: none;
+//         }
+//         li {
+//             margin: 10px 0;
+//         }
+//     }
+// }
+
+//partie service a la carte 
+// .service_carte {
+//     @include tablette {
+//         display: flex;
+//         justify-content: center;
+//         padding: 0 20px;
+//     }
+//     .service_img-container {
+//         width: 200px;
+//         position: relative;
+//         img {
+//             position: absolute;
+//             top: 50%;
+//             transform: translateY(-50%);
+//             border: solid 8px;
+//         }
+//         @include max-tablette {
+//             display: none;
+//         }
+//         @include tablette {
+//             margin-right: 10px;
+//         }
+//         @include tablette-l {
+//             margin-right: 50px;
+//         }
+//     } 
+// }
+// .service_byone {
+//     text-align: center;
+//     .service_header {
+//         @include tablette {
+//             display: flex;
+//             justify-content: space-between;
+//         }
+//         h3 {
+//             align-self: flex-end;
+//             font-size: 2rem;
+//         }
+//         img {
+//             width: 120px;
+//             @include max-tablette {
+//                 display: none;
+//             }
+//         }
+//     }
+//     .service_yellow-line {
+//         border: solid yellow 0.5px;
+//         margin: 20px 0;
+//     }
+// }
+// .byone {
+//     //text-align: center;
+//     font-size: 1.3rem;
+//     margin-bottom: 10px;
+//     @include tablette {
+//         display: flex;
+//         justify-content: space-between;
+//         //padding: 0 40px;
+//     }
+//     p + p {
+//         margin-left: 20px;
+//     }
+// }
