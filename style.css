@@ -224,6 +224,136 @@ h1 {
   margin: 15px 0;
 }
 
+@media all and (min-width: 1024px) {
+  .service_pack .service_pack-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .service_pack .service_pack-title .title_left {
+    position: relative;
+    width: 260px;
+    height: 100px;
+    margin-right: 105px;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1200px) {
+  .service_pack .service_pack-title .title_left {
+    width: 250px;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1400px) {
+  .service_pack .service_pack-title .title_left {
+    width: 350px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .service_pack .service_pack-title .title_right {
+    position: relative;
+    background-color: #2F5597;
+    width: 640px;
+    height: 100px;
+    margin-left: 105px;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1200px) {
+  .service_pack .service_pack-title .title_right {
+    width: 650px;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1400px) {
+  .service_pack .service_pack-title .title_right {
+    width: 750px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .service_pack .service_pack-title .title_right::before {
+    content: "";
+    position: absolute;
+    left: -39.7px;
+    border-left: 40px solid transparent;
+    border-bottom: 100px solid #2F5597;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1200px) {
+  .service_pack .service_pack-title .title_right::before {
+    left: -39.2px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .service_pack .service_pack-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .service_pack .service_pack-container .container_left {
+    position: relative;
+    background-color: #2E75B6;
+    width: 200px;
+    height: 500px;
+    margin-right: 105px;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1400px) {
+  .service_pack .service_pack-container .container_left {
+    width: 300px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .service_pack .service_pack-container .container_left::after {
+    content: "";
+    position: absolute;
+    right: -199.3px;
+    border-right: 200px solid transparent;
+    border-top: 500px solid #2E75B6;
+  }
+  .service_pack .service_pack-container .container_right {
+    position: relative;
+    background-color: #D2D2D2;
+    width: 700px;
+    height: 500px;
+    margin-left: 105px;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1400px) {
+  .service_pack .service_pack-container .container_right {
+    width: 800px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .service_pack .service_pack-container .container_right::before {
+    content: "";
+    position: absolute;
+    left: -199.3px;
+    border-left: 200px solid transparent;
+    border-bottom: 500px solid #D2D2D2;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1400px) {
+  .service_pack .service_pack-container .container_right::before {
+    left: -199px;
+  }
+}
+
 .right_allpacks-container {
   text-align: center;
   background-color: #D2D2D2;
@@ -255,6 +385,18 @@ h1 {
 .right_allpacks-container .pack-container_details .pack_details--bold {
   font-weight: bolder;
   margin-top: 10px;
+}
+
+@media all and (min-width: 1024px) {
+  .right_allpacks-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: initial;
+  }
+  .right_allpacks-container .right_pack-container {
+    margin: 0;
+  }
 }
 
 .service_carte {

@@ -125,12 +125,116 @@ h1 {
     font-size: 1.5rem;
 }
 
-
+//partie service pack
 .service_pack {
     h2 {
         text-align: center;
         font-size: 2rem;
         margin: 15px 0;
+    }
+    @include desktop-s {
+        .service_pack-title {
+            display: flex;
+            justify-content: center;
+            //margin-bottom: 15px;
+            .title_left {
+                position: relative;
+                width: 260px;
+                height: 100px;
+                margin-right: 105px;
+                @include desktop-m {
+                    width: 250px;
+                }
+                @include desktop-l {
+                    width: 350px;
+                }
+                // h2 {
+                //     position: absolute;
+                //     top: 45%;
+                //     left: 20%;
+                //     font-size: 2rem;
+                //     @include max-tablette {
+                //         position: inherit;
+                //     }
+                // }
+            }
+            .title_right {
+                position: relative;
+                background-color: $form-color-dark;
+                width: 640px;
+                height: 100px;
+                margin-left: 105px;
+                // @include max-tablette {
+                //     display: none;
+                // }
+                @include desktop-m {
+                    width: 650px;
+                }
+                @include desktop-l {
+                    width: 750px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -39.7px;
+                    border-left: 40px solid transparent;
+                    border-bottom: 100px solid $form-color-dark;
+                    @include desktop-m {
+                        left: -39.2px;
+                    }
+                }
+            }
+        }
+        .service_pack-container {
+            display: flex;
+            justify-content: center;
+            .container_left {
+                position: relative;
+                background-color: $form-color;
+                width: 200px;
+                height: 500px;
+                margin-right: 105px;
+                // @include max-tablette {
+                //     display: none;
+                // }
+                @include desktop-l {
+                    width: 300px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -199.3px;
+                    border-right: 200px solid transparent;
+                    border-top: 500px solid #2E75B6;
+                }
+            }
+            .container_right {
+                position: relative;
+                background-color: #D2D2D2;
+                width: 700px;
+                height: 500px;
+                margin-left: 105px;
+                // @include max-tablette {
+                //     margin-left: 0;
+                // }
+                @include desktop-l {
+                    width: 800px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -199.3px;
+                    border-left: 200px solid transparent;
+                    border-bottom: 500px solid #D2D2D2;
+                    // @include max-tablette {
+                    //     display: none;
+                    // }
+                    @include desktop-l {
+                        left: -199px;
+                    }
+                }
+            }
+        }
     }
 }
 .right_allpacks-container {
@@ -159,6 +263,13 @@ h1 {
             font-weight: bolder;
             margin-top: 10px;
         }
+    }
+    @include desktop-s {
+       display: flex;
+       background-color: initial;
+       .right_pack-container {
+        margin: 0;
+    }
     }
 }
 
@@ -238,34 +349,6 @@ h1 {
 //         width: 1300px;
 //     }
 // }
-// .service_pack-title {
-//     display: flex;
-//     justify-content: center;
-//     margin-bottom: 15px;
-//     @include max-tablette {
-//         display: inherit;
-//     }
-//     .title_left {
-//         position: relative;
-//         width: 260px;
-//         height: 100px;
-//         margin-right: 105px;
-//         @include desktop-m {
-//             width: 250px;
-//         }
-//         @include desktop-l {
-//             width: 350px;
-//         }
-//         h2 {
-//             position: absolute;
-//             top: 45%;
-//             left: 20%;
-//             font-size: 2rem;
-//             @include max-tablette {
-//                 position: inherit;
-//             }
-//         }
-//     }
 //     .title_right {
 //         position: relative;
 //         background-color: $form-color-dark;
@@ -293,59 +376,15 @@ h1 {
 //         }
 //     }
 // }
-// .service_pack-container {
-//     display: flex;
-//     justify-content: center;
-//     .container_left {
-//         position: relative;
-//         background-color: $form-color;
-//         width: 200px;
-//         height: 500px;
-//         margin-right: 105px;
-//         @include max-tablette {
-//             display: none;
-//         }
-//         @include desktop-l {
-//             width: 300px;
-//         }
-//         &::after {
-//             content: "";
-//             position: absolute;
-//             right: -199.3px;
-//             border-right: 200px solid transparent;
-//             border-top: 500px solid #2E75B6;
-//         }
-//     }
-//     .container_right {
-//         position: relative;
-//         background-color: #D2D2D2;
-//         width: 700px;
-//         height: 500px;
-//         margin-left: 105px;
-//         @include max-tablette {
-//             margin-left: 0;
-//         }
-//         @include desktop-l {
-//             width: 800px;
-//         }
-//         &::before {
-//             content: "";
-//             position: absolute;
-//             left: -199.3px;
-//             border-left: 200px solid transparent;
-//             border-bottom: 500px solid #D2D2D2;
-//             @include max-tablette {
-//                 display: none;
-//             }
-//             @include desktop-l {
-//                 left: -199px;
-//             }
-//         }
-//     }
+
+
+
+
+//  
+//    
 // }
 // .right_allpacks-container {
 //     position: relative;
-//     display: flex;
 //     margin-right: 5px;
 //     @include max-tablette {
 //         display: initial;
@@ -394,21 +433,6 @@ h1 {
 //         position: relative;
 //         img {
 //             position: absolute;
-//             top: 50%;
-//             transform: translateY(-50%);
-//             border: solid 8px;
-//         }
-//         @include max-tablette {
-//             display: none;
-//         }
-//         @include tablette {
-//             margin-right: 10px;
-//         }
-//         @include tablette-l {
-//             margin-right: 50px;
-//         }
-//     } 
-// }
 // .service_byone {
 //     text-align: center;
 //     .service_header {
