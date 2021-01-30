@@ -1,4 +1,7 @@
 .bg_img {
+    @include max-tablette {
+        display: none;
+    }
     // img {
     //     object-position: center;
     //     object-fit: cover;
@@ -162,15 +165,35 @@ h1 {
 //service carte
 .service_carte {
     text-align: center;
+    @include tablette {
+        display: flex;
+        justify-content: center;
+        // @include desktop-m {
+        //     width: 1100px;
+        // }
+        // @include desktop-l {
+        //     width: 1300px;
+        // }
+    }
     .service_img-container {
         @include max-tablette {
             display: none;
         }
+        margin-right: 50px;
+        img {
+            border: solid 8px;
+            margin-top: 30%;
+        }
     }
 }
 .service_header {
+    @include tablette {
+        display: flex;
+        justify-content: space-between;
+    }
     h3 {
         font-size: 2rem;
+        align-self: flex-end;
     }
     img {
         @include max-tablette {
@@ -178,13 +201,26 @@ h1 {
         }
     }
 }
+.service_yellow-line {
+    border: solid yellow 0.5px;
+    margin: 20px 0;
+}
 .service_byone {
     margin: 10px 0;
+    @include tablette {
+       margin: 0;
+    }
     .byone {
         margin: 5px 0;
+        @include tablette {
+            display: flex;
+            justify-content: space-between;
+            p + p {
+               margin-left: 20px;
+            }
+        }
     }
 }
-
 // .service_pack {
 //     @include max-tablette {
 //         width: 100%;
