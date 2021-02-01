@@ -218,6 +218,10 @@ h1 {
   font-size: 1.5rem;
 }
 
+.service_pack {
+  margin-top: 20px;
+}
+
 .service_pack h2 {
   text-align: center;
   font-size: 2rem;
@@ -232,10 +236,11 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 15px;
   }
   .service_pack .service_pack-title .title_left {
     position: relative;
-    width: 260px;
+    width: 250px;
     height: 100px;
     margin-right: 105px;
   }
@@ -254,10 +259,16 @@ h1 {
 }
 
 @media all and (min-width: 1024px) {
+  .service_pack .service_pack-title .title_left h2 {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    font-size: 2rem;
+  }
   .service_pack .service_pack-title .title_right {
     position: relative;
     background-color: #2F5597;
-    width: 640px;
+    width: 650px;
     height: 100px;
     margin-left: 105px;
   }
@@ -396,6 +407,7 @@ h1 {
   }
   .right_allpacks-container .right_pack-container {
     margin: 0;
+    width: 32%;
   }
 }
 
@@ -426,7 +438,7 @@ h1 {
 
 .service_carte .service_img-container img {
   border: solid 8px;
-  margin-top: 30%;
+  margin-top: 50%;
 }
 
 @media all and (min-width: 767px) {
@@ -441,9 +453,10 @@ h1 {
 }
 
 .service_header h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  text-decoration: underline;
 }
 
 @media all and (max-width: 767px) {
@@ -458,12 +471,18 @@ h1 {
 }
 
 .service_byone {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
-@media all and (min-width: 767px) {
+@media all and (min-width: 1024px) {
   .service_byone {
-    margin: 0;
+    width: 500px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .service_byone {
+    width: 600px;
   }
 }
 
@@ -482,6 +501,12 @@ h1 {
   }
   .service_byone .byone p + p {
     margin-left: 20px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .service_byone .byone p {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
