@@ -509,4 +509,34 @@ h1 {
     font-size: 1.3rem;
   }
 }
+
+footer {
+  text-align: center;
+}
+
+footer h2 {
+  background-color: #A5B7C5;
+  margin: 10px;
+}
+
+footer .contact {
+  margin: 20px;
+}
+
+footer .light {
+  background-color: #2E75B6;
+}
+
+footer .dark {
+  background-color: #2F5597;
+}
+
+footer .dark span {
+  font-size: 0.7rem;
+}
+
+footer .infos_legales {
+  font-size: 0.8rem;
+  margin-top: 30px;
+}
 /*# sourceMappingURL=style.css.map */
