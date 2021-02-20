@@ -1,31 +1,33 @@
-.bg_img {
-    @include max-tablette {
-        display: none;
-    }
-    // img {
-    //     object-position: center;
-    //     object-fit: cover;
-    // }
-    background-image: url('./assets/images/bg-img.png');
-    background-size: cover;
-    background-attachment: fixed;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    p {
-        position: absolute;
-        left: 22%;
-        top: 35%;
-        font-size: 2rem;
-        color: #fff;
-        border: solid #fff;
-        cursor: pointer;
-    }
-}
-.fadeout {
-    animation: fadeout 1s ease-in forwards;
-}
+// .bg_img {
+//     @include max-tablette {
+//         display: none;
+//     }
+//     // img {
+//     //     object-position: center;
+//     //     object-fit: cover;
+//     // }
+//     //background-image: url('./assets/images/bg-img.png');
+//     background-image: url('./assets/images/logo.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     // background-attachment: fixed;
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 10;
+//     p {
+//         position: absolute;
+//         left: 22%;
+//         top: 35%;
+//         font-size: 2rem;
+//         color: #fff;
+//         border: solid #fff;
+//         cursor: pointer;
+//     }
+// }
+// .fadeout {
+//     animation: fadeout 1s ease-in forwards;
+// }
 
 
 .presentation {
@@ -89,7 +91,8 @@ h1 {
     border-bottom: 70px solid #ffff;
 }
 .presentation_intro, .presentation_seller, .presentation_buyer {
-    background-color: #D2D2D2;
+    //background-color: #D2D2D2;
+    background-color: $blue-azur;
     position: relative;
     font-size: 1.3rem;
     &::before {
@@ -211,7 +214,8 @@ h1 {
             }
             .container_right {
                 position: relative;
-                background-color: #D2D2D2;
+                //background-color: #D2D2D2;
+                background-color: $blue-azur;
                 width: 700px;
                 height: 500px;
                 margin-left: 105px;
@@ -226,7 +230,8 @@ h1 {
                     position: absolute;
                     left: -199.3px;
                     border-left: 200px solid transparent;
-                    border-bottom: 500px solid #D2D2D2;
+                    //border-bottom: 500px solid #D2D2D2;
+                    border-bottom: 500px solid $blue-azur;
                     // @include max-tablette {
                     //     display: none;
                     // }
@@ -240,7 +245,8 @@ h1 {
 }
 .right_allpacks-container {
     text-align: center;
-    background-color: #D2D2D2;
+    //background-color: #D2D2D2;
+    background-color: $blue-azur;
     padding: 10px 0;
     .right_pack-container {
         margin: 20px 40px;
@@ -252,6 +258,7 @@ h1 {
     }
     .pack-container_details {
         background-color: #C7CACB;
+        background-color: $form-color;
         padding: 10px;
         li {
             list-style: none;
@@ -278,46 +285,8 @@ h1 {
 //service carte
 .service_carte {
     text-align: center;
-    @include tablette {
-        display: flex;
-        justify-content: center;
-        // @include desktop-m {
-        //     width: 1100px;
-        // }
-        // @include desktop-l {
-        //     width: 1300px;
-        // }
-    }
-    .service_img-container {
-        @include max-tablette {
-            display: none;
-        }
-        margin-right: 50px;
-        img {
-            border: solid 8px;
-            margin-top: 50%;
-        }
-    }
-}
-.service_header {
-    @include tablette {
-        display: flex;
-        justify-content: space-between;
-    }
-    h3 {
-        font-size: 2.5rem;
-        align-self: flex-end;
-        text-decoration: underline;
-    }
-    img {
-        @include max-tablette {
-            display: none;
-        }
-    }
-}
-.service_yellow-line {
-    border: solid yellow 0.5px;
-    margin: 20px 0;
+    font-size: 2rem;
+    margin: 100px 50px;
 }
 .service_byone {
     margin: 20px 0;
