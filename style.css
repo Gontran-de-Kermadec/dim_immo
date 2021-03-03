@@ -403,6 +403,17 @@ h1 {
   font-size: 1.5rem;
 }
 
+@media all and (min-width: 1024px) {
+  .right_allpacks-container {
+    position: relative;
+  }
+  .right_allpacks-container .right_pack-warning {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+  }
+}
+
 .right_allpacks-container .pack-container_details {
   background-color: #C7CACB;
   background-color: #2E75B6;

@@ -256,6 +256,14 @@ h1 {
             font-size: 1.5rem;
         }
     }
+    @include desktop-s {
+        position: relative;
+        .right_pack-warning {
+            position: absolute;
+            bottom: -20px;
+            right: 20px;
+        }
+    }
     .pack-container_details {
         background-color: #C7CACB;
         background-color: $form-color;
